@@ -1,31 +1,18 @@
-<body>
-  <header>
-    <div class="header-logo"><a href="#">Типа ФОРУМ</a></div>
-    <div class="mid-v">
-      <div class="header-state">Состояние</div>
-    </div>
-  </header>
-  
-  <main>
-    <ul class="themes-list">
-      <% @forum_messages.each do |message| %>
-      <li class="themes-item">
-        <div class="theme-author"><%= message.author %></div>
-        <div class="last-post"><%= message.text %></div>
-        <div class="theme-buttons">
-          <button>Редактировать</button>
-          <button>Удалить</button>
-        </div>
-      </li>
-      <% end %>
-    </ul>
-    <div class="new-post">
-      <textarea rows="10"></textarea>
-      <button>Опубликовать пост</button>
-    </div>
-  </main>
-  
-  <footer>
-    <div class="copyright mid-v">Сделано Alex Krol 2022 &#169; <krolmail@list.ru></div>
-  </footer>
-</body>
+<main>
+  <ul class="themes-list">
+    <% @forum_messages.each do |message| %>
+    <li class="themes-item">
+      <div class="theme-author"><%= message.author %></div>
+      <div class="last-post"><%= message.text %></div>
+      <div class="theme-buttons">
+        <button>Редактировать</button>
+        <button>Удалить</button>
+      </div>
+    </li>
+    <% end %>
+  </ul>
+  <div class="new-post">
+    <textarea rows="10"></textarea>
+    <button>Опубликовать пост</button>
+  </div>
+</main>

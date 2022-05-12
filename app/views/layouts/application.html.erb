@@ -11,6 +11,15 @@
   </head>
 
   <body>
+    <header>
+      <div class="header-logo"><%= link_to "Типа ФОРУМ", root_url %></div>
+      <div class="mid-v">
+        <div class="header-state">Состояние</div>
+      </div>
+    </header>
     <%= yield %>
+    <footer>
+      <div class="copyright mid-v">Сделано Alex Krol 2022 &#169; <krolmail@list.ru></div>
+    </footer>
   </body>
 </html>
