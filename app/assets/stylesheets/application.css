@@ -20,8 +20,8 @@
   font-weight: 400;
   font-style: normal;
   src: local('Montserrat Regular'), local('Montserrat-Regular'),
-       url(../fonts/montserrat-regular.woff2) format('woff2'),
-       url(../fonts/montserrat-regular.woff) format('woff');
+       url(montserrat-regular.woff2) format('woff2'),
+       url(montserrat-regular.woff) format('woff');
 }
 
 
@@ -39,7 +39,6 @@
 }
 
 body {
-  min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
@@ -83,7 +82,7 @@ footer * { color: #EEF; }
 
 
 /* main */
-main { margin: 64px 20px 40px 20px; }
+main { margin: 64px 20px 40px 20px; min-height: calc(100vh - 152px); }
 
 .themes-list { margin-bottom: 24px; }
 .themes-item {
