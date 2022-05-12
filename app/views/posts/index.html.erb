@@ -10,7 +10,8 @@
   </li>
   <% end %>
 </ul>
-<div class="new-post">
-  <textarea rows="10"></textarea>
-  <button>Опубликовать пост</button>
-</div>
+<%= form_with url: posts_api_path, html: {class: "new-post"} do |f| %>
+  <%= f.text_field :author, required: true, minlength: 2, placeholder: "Имя Автора" %>
+  <%= f.text_area :text, rows: 10, required: true, minlength: 2, placeholder: "Ваш текст..." %>
+  <%= f.submit "Опубликовать пост", class: "button" %>
+<% end %>
