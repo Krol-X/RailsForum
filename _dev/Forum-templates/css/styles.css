@@ -1,0 +1,110 @@
+/* reset */
+
+@font-face {
+  font-family: 'Montserrat';
+  font-display: fallback;
+  font-weight: 400;
+  font-style: normal;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+       url(../fonts/montserrat-regular.woff2) format('woff2'),
+       url(../fonts/montserrat-regular.woff) format('woff');
+}
+/*  */
+
+*, *::before, *::after {
+  margin: 0; padding: 0; vertical-align: baseline; border: 0;
+  font: inherit;
+  font-size: 100%;
+  font-family: Montserrat, Verdana, sans-serif;
+  box-sizing: border-box;
+  color: #000; background: transparent;
+  outline: none;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background: #FFF;
+}
+a { text-decoration: none; }  ol, ul { list-style: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+.mid-v { display: table-cell; vertical-align: middle; }
+
+
+/* header */
+
+header {
+  display: table;
+  position: fixed; top: 0;
+  width: 100%; height: 48px;
+  background: #006699;
+  border-bottom: thin solid #00B;
+}
+header * { color: #EEF; }
+header > div { display: inline-block; height: 100%; }
+.header-state { width: 192px; float: right; }
+.header-logo {
+  width: 256px; text-align: center;
+  font-size: 200%; font-weight: bold;
+}
+
+
+
+footer {
+  display: table;
+  width: 100%; height: 48px;
+  background: #006699;
+  border-bottom: thin solid #00B;
+  padding: 0 20px;
+}
+footer * { color: #EEF; }
+
+
+
+/* main */
+main { margin: 64px 20px 40px 20px; }
+
+.themes-list { margin-bottom: 24px; }
+.themes-item {
+  border: thin solid #00F; border-radius: 24px;
+  width: 100%; padding: 10px;
+  margin-bottom: 4px;
+  background: #ECECEC;
+}
+.themes-item > div { margin-bottom: 10px; }
+.theme-author {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.theme-buttons { text-align: right; }
+
+.new-post {
+  width: 100%; resize: none;
+  border: thin solid #000;
+  border-radius: 24px;
+  padding: 10px;
+  background: #ECECEC;
+}
+.new-post > textarea {
+  width: 100%; resize: none;
+  line-height: 1.2; outline: thin solid #99F;
+  border-radius: 8px;
+  padding: 4px;
+  background: #F0F0FF;
+}
+
+
+
+/* Buttons */
+button {
+  font-size: 90%;
+  padding: 0 10px;
+  border: thin solid #00F;
+  border-radius: 8px;
+  color: #000;
+  background: #DDD;
+}
+button:hover { outline: thin solid #AAF; }
