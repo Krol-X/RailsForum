@@ -1,5 +1,3 @@
-/* reset */
-
 @font-face {
   font-family: 'Montserrat';
   font-display: fallback;
@@ -9,7 +7,10 @@
        url(../fonts/montserrat-regular.woff2) format('woff2'),
        url(../fonts/montserrat-regular.woff) format('woff');
 }
-/*  */
+
+
+
+/* reset */
 
 *, *::before, *::after {
   margin: 0; padding: 0; vertical-align: baseline; border: 0;
@@ -32,6 +33,7 @@ a { text-decoration: none; }  ol, ul { list-style: none; }
 table { border-collapse: collapse; border-spacing: 0; }
 
 .mid-v { display: table-cell; vertical-align: middle; }
+
 
 
 /* header */
